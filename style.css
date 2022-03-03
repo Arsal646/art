@@ -1,0 +1,100 @@
+.card_detail{
+    margin: 10px 0;
+}
+.card_header{
+    min-height: 100px;
+    background: rgb(50,156,223);
+    background: rgb(50,156,223);
+    background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(41,139,221,1) 22%, rgba(27,110,217,1) 50%, rgba(1,59,210,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+.btn_text{
+    border: 1px solid white;
+    padding: 5px 15px;
+}
+.curve_div1{
+    position: relative;
+    top: -20px;
+}
+.curve1 {
+    display: block;
+    box-sizing: border-box;
+    min-height: 30px;
+    height: 30px;
+    background: rgb(50,156,223);
+    background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(64,71,92,1) 0%);
+    clip-path: ellipse(55% 100% at 50% 0%);
+    transform: rotate(180deg);
+    }
+    .curve2 {
+        display: block;
+        box-sizing: border-box;
+        min-height: 30px;
+        height: 30px;
+        background: rgb(50,156,223);
+        background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(64,71,92,1) 0%);
+        clip-path: ellipse(55% 100% at 50% 0%);
+        position: relative;
+        top: -2px;
+        z-index: 99;
+        }
+.card_body{
+    background-color: white;
+    position: relative;
+    top:-50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.card_body p{
+   
+  padding: 0 20px;
+  padding-top: 50px;
+}
+.card_btn{
+    color: white;
+    background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(41,139,221,1) 22%, rgba(27,110,217,1) 50%, rgba(1,59,210,1) 100%);
+  
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 99;
+    position: relative;
+    top: 14px;
+
+}
+.curve_div1{
+    position: relative;
+    top: -20px;
+    width: 100%;
+}
+.curve_div2 .curve1{
+    display: block;
+    box-sizing: border-box;
+    min-height: 30px;
+    height: 30px;
+    background: rgb(50,156,223);
+    background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(64,71,92,1) 0%);
+    clip-path: ellipse(55% 100% at 50% 0%);
+    transform: rotate(180deg);
+    border-radius: 10px;
+    
+
+}
+.curve_div2{
+    max-width: 100%;
+    width: 100%;
+
+}

@@ -1,0 +1,1833 @@
+﻿<?php
+    // Use API site scope.
+    define('RW_SDK__API_SCOPE', 'site');
+    
+    // Modify the following definitions to your site details.
+    define('RW_SDK__SITE_ID',         '260506');
+    define('RW_SDK__SITE_PUBLIC_KEY', '235d3ade555f5f6d5e9dad4b7f74f2bc');
+    define('RW_SDK__SITE_SECRET_KEY', 'h1cU0hR-CngbeatDoa+y{KY1Jc~L4hTU');
+    
+    // Include RatingWidget's SDK.
+    require 'src/ratingwidget.php';
+    
+    // Init SDK with your site details (assumes that the SDK located in same folder of this example).
+    $rw_api = new \RatingWidget\Api\Sdk\RatingWidget(
+        RW_SDK__API_SCOPE,
+        RW_SDK__SITE_ID,
+        RW_SDK__SITE_PUBLIC_KEY,
+        RW_SDK__SITE_SECRET_KEY
+    );
+    
+    $item_id = 1507; // Replace that with your rating id.
+    
+    // If you want the rating to work with Rich-Snippets,
+    // set the rating class to one of the following values:
+    //     product, page, blog-post, post, front-post, item
+    $rating_class = 'page';  
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="Themes Industry">
+    <!-- description -->
+
+    <!-- keywords -->
+    <meta name="keywords" content="lucrarea, artist, aflat, constelatia, gemenilor">
+    <!-- Page Title -->
+    <title>Lucrarea unui artist aflat in constelatia gemenilor | Neculai Fantanaru</title>
+    <link rel="canonical"
+        href="https://neculaifantanaruleadership.ro/lucrarea-unui-artist-aflat-in-constelatia-gemenilor.html" />
+    <meta name="description"
+        content="Un om care se vede constant printr-un alt om, intr-o calatorie prin evolu?ia artei,incepe sa reactioneze cu dublul sau in virtutea unei mentalitati de nivel superior.">
+    <!-- Favicon -->
+    <link rel="icon" href="https://neculaifantanaru.com/totul_despre_lideri_si_leadership.ico">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="./vendor/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="./vendor/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./vendor/css/cubeportfolio.min.css">
+    <!-- Revolution Slider CSS Files -->
+    <link rel="stylesheet" href="./creative-studio/css/navigation.css">
+    <link rel="stylesheet" href="./creative-studio/css/settings.css">
+    <!-- Slick CSS Files -->
+    <link rel="stylesheet" href="./vendor/css/slick.css">
+    <link rel="stylesheet" href="./vendor/css/slick-theme.css">
+    <!-- Select -->
+    <link rel="stylesheet" href="./vendor/css/select2.min.css">
+    <link rel="stylesheet" href="./creative-studio/css/menu.css">
+    <link rel="stylesheet" href="./creative-studio/css/country-dropdown.css">
+    <link rel="stylesheet" href="./creative-studio/css/footer.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./creative-studio/css/style.css">
+    <!-- Custom Style CSS File -->
+    <link rel="stylesheet" href="./creative-studio/css/custom.css">
+    <link rel="stylesheet" href="./creative-studio/css/booksSection.css">
+
+    <meta http-equiv="Content-Language" content="ro" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="resource-type" content="document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="distribution" content="global" />
+    <meta http-equiv="Cache-control" content="public" />
+    <link rel="alternate" type="application/rss+xml" title="Ultimele Articole"
+        href="https://feeds.feedburner.com/neculaifantanaruro" />
+    <meta name="classification" content="Leadership" />
+    <meta name="keywords" content="lucrarea, artist, aflat, constelatia, gemenilor" />
+    <meta name="abstract" content="Lucrarea unui artist aflat in constelatia gemenilor | Neculai Fantanaru" />
+    <meta name="Robots" content="index,follow" />
+    <meta name='robots' content='max-image-preview:large' />
+    <!-- The SEO Framework od Sybre Waaijer -->
+    <meta name="robots" content="max-snippet:-1,max-image-preview:standard,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="Subject" content="Lucrarea unui artist aflat in constelatia gemenilor | Neculai Fantanaru" />
+    <meta name="expire" content="never" />
+    <meta name="revisit-after" content="10 days" />
+    <meta name="copyright" content="Neculai Fantanaru, https://neculaifantanaruleadership.ro" />
+    <link rel="sitemap" type="application/rss+xml" href="rss.xml" />
+    <link rel="image_src" type="image/jpeg" href="https://neculaifantanaruleadership.ro/icon-facebook.jpg"
+        style="display:none" />
+    <meta itemprop="image" content="https://neculaifantanaruleadership.ro/icon-facebook.jpg" />
+    <meta property="og:image" content="https://neculaifantanaruleadership.ro/icon-facebook.jpg" />
+    <meta property="og:type" content="article" />
+    <meta property="fb:app_id" content="215619111804710" />
+    <meta property="fb:admins" content="1644158242" />
+    <meta property="og:url"
+        content="https://neculaifantanaruleadership.ro/lucrarea-unui-artist-aflat-in-constelatia-gemenilor.html" />
+    <meta property="og:image:width" content="688" />
+    <meta property="og:image:height" content="150" />
+    <meta property="og:locale" content="ro-RO" />
+    <meta name="yandex-verification" content="6b7169b283c6c9cc" />
+    <meta property="og:title" content="Lucrarea unui artist aflat in constelatia gemenilor | Neculai Fantanaru" />
+    <meta property="og:description"
+        content="Un om care se vede constant printr-un alt om, intr-o calatorie prin evolu?ia artei,incepe sa reactioneze cu dublul sau in virtutea unei mentalitati de nivel superior." />
+
+    <!-- Schema Org Start -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://neculaifantanaru.com/ochiul-sfant-al-lui-paracelsus.html"
+  },
+  "headline": "Ochiul sfant al lui Paracelsus | Neculai Fantanaru",
+  "description": "Orice privire, chiar daca este pierduta, poate fi restaurata prin intermediul unui singur considerent: simtirea stie totul dinainte ca gandirea efectiva sa aiba loc.",
+  "image": "https://neculaifantanaruleadership.ro/icon-facebook.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Neculai Fantanaru",
+    "url": "https://neculaifantanaru.com/despre.html"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Neculai Fantanaru",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://neculaifantanaruleadership.ro/creative-studio/img/logo2.png"
+    }
+  },
+  "datePublished": "2022-02-15",
+  "dateModified": "2022-02-17"
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "Ochiul sfant al lui Paracelsus | Neculai Fantanaru",
+  "image": "https://neculaifantanaruleadership.ro/icon-facebook.jpg",
+  "description": "Orice privire, chiar daca este pierduta, poate fi restaurata prin intermediul unui singur considerent: simtirea stie totul dinainte ca gandirea efectiva sa aiba loc.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Neculai Fantanaru"
+  },
+  "sku": "NFL",
+  "gtin8": "NFL",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://neculaifantanaru.com/ochiul-sfant-al-lui-paracelsus.html",
+    "priceCurrency": "RON",
+    "price": "0",
+    "priceValidUntil": "2022-02-15",
+    "availability": "https://schema.org/OnlineOnly"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "ratingCount": "55"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {"@type": "Person", "name": "Neculai Fantanaru"},
+    "publisher": {"@type": "Organization", "name": "Neculai Fantanaru"}
+  }
+}
+</script>
+
+    <!-- Schema Org Final -->
+
+
+
+    <style type="text/css">
+        .float-container-stars {
+            padding: 5px;
+            width: 100%;
+        }
+
+        .float-child {
+            width: 50%;
+            float: left;
+            padding: 5px;
+        }
+
+        .bebe-child.green {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+        }
+
+        .bebe-child.blue {
+            margin: 0 auto;
+
+        }
+
+        .spatiu-liber {}
+
+        .float-container-stars {
+            margin-bottom: 100px;
+        }
+
+        #frame-one1919401971 {
+            height: 500px;
+        }
+
+
+
+        @media (min-width: 767px) {
+            br.hidebreak {
+                display: none;
+            }
+
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            #hidden {
+                display: none;
+            }
+
+            #hidden2 {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5LXZSBG');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body data-spy="scroll" class="index-modal-body" data-target=".navbar-nav" data-offset="90">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LXZSBG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Loader -->
+    <!-- <div class="loader" id="loader-fade">
+        <div class="loader-container">
+            <ul class="loader-box">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- Loader ends -->
+    <!-- Header start -->
+    <header class="index-modal-header">
+        <nav class="navbar navbar-top-default navbar-expand-lg nav-three-circles transparent-bg">
+            <div class="container-fluid">
+                <!--<a class="logo ml-lg-1" href="javascript:void(0)">
+                    <img src="./creative-studio/img/logo-white.png" alt="logo" title="Logo" class="logo-default">
+                    <img src="./creative-studio/img/logo2.png" alt="logo" title="Logo" class="logo-scrolled">
+                </a>-->
+                <!-- FLAGS_1 -->
+                <div class="wrapper country-wrapper">
+                    <dl id="country-select" class="dropdown country-select">
+                        <dt><a href="javascript:void(0);"><span><span
+                                        style="background-position:0px -671px"></span><span>Romania</span></span><i
+                                    class="fa fa-chevron-down"></i></a></dt>
+                        <dd>
+                            <ul style="display: none;">
+                                <li><a cunt_code="+40" href="javascript1"><span
+                                            style="background-position:0px -671px"></span><span>Romania</span></a></li>
+                                <li><a cunt_code="+594" href="javascript2"><span
+                                            style="background-position:0px -2234px"></span><span>French</span></a></li>
+                                <li><a cunt_code="+1" href="javascript3"><span
+                                            style="background-position:0px -44px"></span><span>United States</span></a>
+                                </li>
+                                <li><a cunt_code="+34" href="javascript4"><span
+                                            style="background-position:0px -1155px"></span><span>Spain</span></a></li>
+                                <li><a cunt_code="+351" href="javascript5"><span
+                                            style="background-position:0px -517px"></span><span>Portugal</span></a></li>
+                                <li><a cunt_code="+966" href="javascript6"><span
+                                            style="background-position:0px -33px"></span><span>Saudi Arabia</span></a>
+                                </li>
+                                <li><a cunt_code="+86" href="javascript7"><span
+                                            style="background-position:0px -825px"></span><span>China</span></a></li>
+                                <li><a cunt_code="+91" href="javascript8"><span
+                                            style="background-position:0px -1694px"></span><span>India</span></a></li>
+                                <li><a cunt_code="+49" href="javascript9"><span
+                                            style="background-position:0px -2509px"></span><span>Germany</span></a></li>
+                                <li><a cunt_code="+7" href="javascriptT"><span
+                                            style="background-position:0px -660px"></span><span>Russia</span></a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- FLAGS -->
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="nav navbar-nav mx-auto index-modal-top-menu">
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro"
+                                class="nav-link home-link"><i class="fa fa-home"></i> HOME</a></li>
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro/leadership-art20/"
+                                target="_new" alt="ART 2.0" class="nav-link">ART 2.0</a></li>
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro/leadership-art32/"
+                                target="_new" alt="ART 3.0" class="nav-link">ART 3.0</a></li>
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro/leadership-art40/"
+                                target="_new" alt="ART 4.0" class="nav-link">ART 4.0</a></li>
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro/leadership-art50/"
+                                target="_new" alt="ART 5.0" class="nav-link">ART 5.0</a></li>
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro/leadership-art60/"
+                                target="_new" alt="ART 6.0" class="nav-link">ART 6.0</a></li>
+                        <li class="nav-item"> <a href="https://neculaifantanaruleadership.ro/contact.html"
+                                class="nav-link">contact</a></li>
+                    </ul>
+                </div>
+                <!-- side menu open button -->
+                <a class="menu_bars d-inline-block menu-bars-setting2 sidemenu_toggle">
+                    <div class="menu-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Side Menu -->
+        <div class="side-menu center">
+            <div class="quarter-circle">
+                <div class="menu_bars2 active" id="btn_sideNavClose">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="inner-wrapper justify-content-center">
+                <div class="col-md-12 text-center">
+                    <a href="javascript:void(0)" class="logo-full mb-4"><img
+                            src="./creative-studio/img/logo-pure-white.png" alt=""></a>
+                </div>
+                <nav class="side-nav m-0">
+                    <!--<ul class="navbar-nav flex-lg-row">
+                        <li class="nav-item"> <a href="./index-creative-studio.html#home" class="nav-link">home</a></li>
+                        <li class="nav-item"> <a href="./index-creative-studio.html#about" class="nav-link">about</a></li>
+                        <li class="nav-item"> <a href="./index-creative-studio.html#work" class="nav-link">work</a></li>
+                        <li class="nav-item"> <a href="./index-creative-studio.html#pricing" class="nav-link">pricing</a></li>
+                        <li class="nav-item"> <a href="./index-creative-studio.html#clients" class="nav-link">clients</a></li>
+                        <li class="nav-item"> <a href="#blog" class="nav-link active">blog</a></li>
+                        <li class="nav-item"> <a href="./index-creative-studio.html#contact" class="nav-link">contact</a></li>
+                    </ul>-->
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="https://neculaifantanaruleadership.ro/lideri-si-atitudine.html">
+                                <span>Lideri &#351;i atitudine</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Leadership magic</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Leadership de succes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Resurse umane</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span>Link Name</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Link Name</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Link Name</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                                <li><a href="#">Link Name</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Single Link</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                <!-- AM SCOS 
+                <div class="side-footer text-white w-132">
+                    <ul class="social-icons-simple">
+                        <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-facebook-f color-white"></i> </a> </li>
+                        <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-instagram color-white"></i> </a> </li>
+                        <li class="side-menu-icons"><a href="javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a> </li>
+                    </ul>
+                    <p class="text-white">&copy; 2022 Neculai Fantanaru</p>
+                </div>
+ AM SCOS 2 -->
+            </div>
+        </div>
+        <a id="close_side_menu" href="javascript:void(0);"></a>
+        <!--Side Menu-->
+    </header>
+    <!-- Header end -->
+    <!-- Page Header -->
+    <!-- <section class="page_header pb-0 w-132"> -->
+    <!-- Main Section start -->
+    <section class="text-center home-banner pt-md-0 index-modal-hero" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#." class="banner-logo">
+                        <img src="creative-studio/img/logo.png" alt="img">
+                    </a>
+                    <div class="heading">Neculai Fantanaru </div>
+                    <p class="motto-subtitle">Totul depinde de cine conduce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Section end -->
+    <section class="text-center home-banner pt-md-0 d-none" id="home">
+        <div class="bg-overlay "></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 page-content position-relative text-white text-center">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Header -->
+
+
+    <!-- Blog starts -->
+    <section id="blog" class="bg-light-gray text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Blog List Inner -->
+                    <div class="blog-listing-inner heading-space-half">
+
+                    </div>
+                </div>
+                <!-- Blog Left Listing -->
+                <div class="col-lg-8 col-md-7">
+
+                    <div class="row m-0" style="background: rgb(50,156,223);
+                    background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(200,200,200,1) 0%);">
+                        <div class="col-md-4" style="background: rgb(50,156,223);
+                        background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(200,200,200,1) 0%);">
+                            <div class="card_detail">
+
+
+                                <div class="card_header">
+                                    <h4 class="text-center btn_text">APROPIERE</h4>
+
+                                </div>
+                                <div class="curve_div1">
+                                    <div class="curve1">
+
+                                    </div>
+                                    <div class="curve2">
+
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <p>APROPIE</p>
+                                    <img src="Colorful-Splash-color-Vector-PNG.png" alt="" srcset="">
+                                    <a class="card_btn" href="#">ART</a>
+                                    <div class="curve_div2">
+                                        <div class="curve1">
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4" style="background: rgb(50,156,223);
+                        background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(200,200,200,1) 0%);">
+
+
+                            <div class="card_detail">
+
+
+                                <div class="card_header" style="background: rgb(77,173,73);
+                                background: linear-gradient(90deg, rgba(77,173,73,1) 0%, rgba(0,101,4,1) 100%);">
+                                    <h4 class="text-center btn_text">REALITATE</h4>
+
+                                </div>
+                                <div class="curve_div1">
+                                    <div class="curve1">
+
+                                    </div>
+                                    <div class="curve2">
+
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <p>REALITATE</p>
+                                    <img src="Colorful-Splash-color-Vector-PNG.png" alt="" srcset="">
+                                    <a class="card_btn" href="#">ART</a>
+                                    <div class="curve_div2">
+                                        <div class="curve1">
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4" style="background: rgb(50,156,223);
+                        background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(200,200,200,1) 0%);">
+
+
+                            <div class="card_detail">
+
+
+                                <div class="card_header" style="background: rgb(202,204,62);
+                                background: linear-gradient(90deg, rgba(202,204,62,1) 0%, rgba(255,182,0,1) 100%);">
+                                    <h4 class="text-center btn_text">FANTEZIE</h4>
+
+                                </div>
+                                <div class="curve_div1">
+                                    <div class="curve1">
+
+                                    </div>
+                                    <div class="curve2">
+
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <p>FANTEZIE</p>
+                                    <img src="Colorful-Splash-color-Vector-PNG.png" alt="" srcset="">
+                                    <a class="card_btn" href="#">ART</a>
+                                    <div class="curve_div2">
+                                        <div class="curve1">
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row m-0"
+                        style="background: rgb(50,156,223);
+                    background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(200,200,200,1) 0%);display: flex;justify-content: center;">
+                        <div class="col-md-4">
+                            <div class="card_detail">
+
+
+                                <div class="card_header"
+                                    style="background: rgb(242,145,191);
+                                background: linear-gradient(90deg, rgba(242,145,191,1) 0%, rgba(217,22,95,1) 35%, rgba(0,212,255,1) 100%);">
+                                    <h4 class="text-center btn_text">APROPIERE</h4>
+
+                                </div>
+                                <div class="curve_div1">
+                                    <div class="curve1">
+
+                                    </div>
+                                    <div class="curve2">
+
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <p>APROPIE</p>
+                                    <img src="Colorful-Splash-color-Vector-PNG.png" alt="" srcset="">
+                                    <a style="background: rgb(242,145,191);
+                                    background: linear-gradient(90deg, rgba(242,145,191,1) 0%, rgba(217,22,95,1) 35%, rgba(0,212,255,1) 100%);"
+                                        class="card_btn" href="#">ART</a>
+                                    <div class="curve_div2">
+                                        <div class="curve1">
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4" style="background: rgb(50,156,223);
+                        background: linear-gradient(90deg, rgba(50,156,223,1) 0%, rgba(200,200,200,1) 0%);">
+
+
+                            <div class="card_detail">
+
+
+                                <div class="card_header" style="background: rgb(251,162,98);
+                                    background: linear-gradient(0deg, rgba(251,162,98,1) 0%, rgba(210,105,30,1) 60%);">
+                                    <h4 class="text-center btn_text">REALITATE</h4>
+
+                                </div>
+                                <div class="curve_div1">
+                                    <div class="curve1">
+
+                                    </div>
+                                    <div class="curve2">
+
+                                    </div>
+                                </div>
+
+                                <div class="card_body">
+                                    <p>REALITATE</p>
+                                    <img src="Colorful-Splash-color-Vector-PNG.png" alt="" srcset="">
+                                    <a style="background: rgb(251,162,98);
+                                    background: linear-gradient(0deg, rgba(251,162,98,1) 0%, rgba(210,105,30,1) 60%);"
+                                        class="card_btn" href="#">ART</a>
+                                    <div class="curve_div2">
+                                        <div class="curve1">
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="blog-box heading-space-half m-md-0">
+                        <!-- Blog List Inner -->
+                        <div class="blog-listing-inner news_item">
+                            <div class="news_desc" itemscope itemtype="http://schema.org/Product">
+                                <h3 class="font-weight-normal" itemprop="name"><a href="javascript:void(0)"
+                                        class="color-black">Lucrarea unui artist aflat &icirc;n constela&#355;ia
+                                        gemenilor </a></h3>
+                                <div
+                                    class="blog-post mt-25px mb-20px d-flex align-items-center flex-wrap flex-lg-row justify-content-start">
+                                    <!--STARTDATES-->
+                                    <i class="fa fa-calendar mx-1"></i>
+                                    <a href="javascript:void(0)" class="color-black">On Februarie 10, 2022</a>
+                                    <a href="https://neculaifantanaruleadership.ro/leadership-fx-intensive.html"
+                                        title="Vezi toate articolele din Leadership Y4-Titanium"
+                                        class="color-green font-weight-600 mx-1" id="hidden"> in Leadership
+                                        Y4-Titanium</a>
+                                    <a href="javascript:void(0)" id="hidden2" class="color-black mr-2 mt-lg-0">by
+                                        Neculai Fantanaru</a>
+                                    <!--FINNISHDATES-->
+                                </div>
+                                <!-- ARTICOL START -->
+
+
+                                <p class="text_obisnuit2"><em>Un om care se vede constant printr-un alt om, &icirc;ntr-o
+                                        c&#259;l&#259;torie prin evolu&#539;ia artei,&nbsp; &icirc;ncepe s&#259;
+                                        reac&#355;ioneze cu dublul s&#259;u &icirc;n virtutea unei mentalit&#259;&#355;i
+                                        de nivel superior.</em></p>
+                                <p class="text_obisnuit">C&acirc;nd doi arti&#351;ti &icirc;&#351;i adun&#259; puterile
+                                    &icirc;ntr-un singur <em>Fitnedianh</em> (aspectul vizibil al unei crea&#355;ii
+                                    invizibile), abia atunci arta cap&#259;t&#259; grandoare. Mai ales dac&#259; vorbim
+                                    din perspectiva explor&#259;rii unei realit&#259;&#355;i care &icirc;&#351;i
+                                    g&#259;se&#351;te forma corespunz&#259;toare suprapus&#259; pe con&#355;inutul unei
+                                    imagini a lui Dumnezeu&nbsp;care nu are ordin &icirc;n universul creat de El. Iar o
+                                    asemenea art&#259; nu poate avea, doar a&#351;a, pur &#351;i simplu, o valoare
+                                    decorativ&#259;, desprins&#259; din lumea religioas&#259; a simbolurilor, a
+                                    coresponden&#355;elor, a ornamentelor din arhitectur&#259; sau a
+                                    semnifica&#355;iilor&nbsp;inversate.</p>
+                                <p class="text_obisnuit">Alteritatea, g&#259;sirea unui dublu al artistului &icirc;n
+                                    constela&#355;ia gemenilor, a&#351;a cum arat&#259; John Sanford &icirc;n desenul
+                                    s&#259;u &ldquo;Gemini the twins&rdquo;, nu este o simpl&#259; &icirc;nchipuire
+                                    ivit&#259; din cugetare, o halucina&#355;ie consensual&#259;
+                                    &icirc;mp&#259;rt&#259;&#351;it&#259; de vreo cauz&#259; extern&#259; prin
+                                    con&#351;tientizarea existen&#355;ei&nbsp;a dou&#259; for&#355;e puternice unite
+                                    &icirc;ntr-o singur&#259;&nbsp;persoan&#259;. Nu este nici&nbsp;rezultanta&nbsp;a
+                                    dou&#259; for&#355;e antagonice care &icirc;ns&#259;&nbsp;nu se anuleaz&#259;, ci se
+                                    atrag printr-o simpatie care te &icirc;mbie la o lume misterioas&#259; cu
+                                    reprezentare &icirc;n plan ceresc.</p>
+                                <p class="text_obisnuit">&Icirc;n art&#259;, alteritatea este
+                                    &icirc;nf&#259;&#355;i&#351;at&#259; ca o c&#259;l&#259;torie &icirc;n alt&#259;
+                                    lume, mai dezvoltat&#259; ca aceasta, &icirc;n care dublul t&#259;u se
+                                    datoreaz&#259; unei tehnici prin intermediul&nbsp;c&#259;reia o persoan&#259; devine
+                                    vocea interioar&#259; a protagonistului pe care nu l-a tr&#259;it niciodat&#259;
+                                    emo&#355;ional, dar care &icirc;i asigur&#259; invizibilitatea &icirc;n plan
+                                    spiritual. &Icirc;ntr-adev&#259;r, o asemenea art&#259; a dublului nemuritor, fiind
+                                    creat&#259; la nivel de &ldquo;ecouri &icirc;ndep&#259;rtate&rdquo;,
+                                    cap&#259;t&#259; un anumit mesaj, dar ea ascunde &icirc;n&#355;elesuri pe care numai
+                                    artistul le simte &#351;i le dezvolt&#259; prin culoare, contur &#351;i fine&#355;e,
+                                    pe traiectoria unui cerc&nbsp;imaginar&nbsp;desenat&nbsp;cu nuan&#355;&#259; de
+                                    galben-auriu peste&nbsp;un fundal obscur.</p>
+                                <p class="text_obisnuit2">Leadership: Abordarea crea&#355;iei tale porne&#351;te de la
+                                    premisa c&#259; forma optim&#259; de constituire a unei individualit&#259;&#355;i
+                                    aparte se afl&#259; la intersec&#355;ia dintre simetrie &#351;i con&#351;tientizare,
+                                    c&acirc;nd forma&nbsp;&#351;i imaginea apar neschimbate &icirc;n acela&#351;i plan?
+                                </p>
+                                <p class="text_obisnuit">M&#259; &icirc;ntreb, cine ar fi dublul meu &icirc;ntr-o
+                                    imagine a c&#259;rui punct convergent este suprapus de profilul unei
+                                    jum&#259;t&#259;&#355;i de elips&#259;&nbsp;sec&#355;ionat&#259; de-a lungul unei
+                                    axe lungi. Miza este de a decide dac&#259; unele fenomene de recunoa&#351;tere a
+                                    subiectivit&#259;&#355;ii pot s&#259; constituie una&nbsp;dintre cele mai frumoase
+                                    &#351;i temeinice dovezi ale g&acirc;ndirii prin contrastul dintre scopul esteticii
+                                    &#537;i a logicii: prima urm&#259;rind&nbsp;frumosul, iar a doua adev&#259;rul.</p>
+                                <p class="text_obisnuit">Cu alte cuvinte, crez&acirc;nd c&#259; meditez asupra
+                                    fiin&#355;ei mele, ajung de fapt s&#259; m&#259; transpun prin oglindire
+                                    &icirc;ntr-un joc spa&#539;io-temporal care anuleaz&#259; logica aparent&#259; a
+                                    fizicii cunoscute, pun&acirc;nd &icirc;n lumin&#259; viziunea despre un univers care
+                                    se extinde mult&nbsp;prea repede pentru ca materia s&#259; se condenseze &icirc;n
+                                    stele, galaxii &#351;i planete. &Icirc;nc&#259; o dat&#259;, m&#259; recomand&#259;
+                                    capacitatea specific&#259; artistului de a extrage din spa&#539;iu-timp
+                                    secven&#539;e &#537;i de a le&nbsp;transpune &icirc;ntr-un
+                                    alt&nbsp;spa&#539;iu-timp, &icirc;ntr-un joc care se poate numi
+                                    &ldquo;imagina&#355;ie&rdquo;.</p>
+                                <p class="text_obisnuit">&#350;i nu doar arta pictural&#259; m&#259; arunc&#259;
+                                    &icirc;ntr-un cerc exterior dedublat,&nbsp;al subiectivit&#259;&#539;ii, plasat la
+                                    aceea&#537;i distan&#539;&#259; de centru ca &#537;i posesivul meu, Alter-Ego-ul
+                                    care tr&#259;ie&#351;te &icirc;ntr-o lume virtual&#259;, martorul meu credincios, ci
+                                    &#351;i bog&#259;&#355;ia imaginativ&#259; a nara&#355;iunii pe care o pun &icirc;n
+                                    circulatie, ca func&#355;ie a imaginii mele proiectate &icirc;ntr-o oglind&#259; a
+                                    metamorfozei spirituale. De exemplu, citeam ieri pe galaxia42.ro o recenzie a
+                                    romanului &bdquo;Piranesi&rdquo; de Susanna Clarke. </p>
+                                <p class="text_obisnuit"><em>&ldquo;Povestea ne pune &icirc;n pielea unui individ care,
+                                        g&#259;sindu-se aproape singur pe lume, &icirc;&#537;i face un scop al
+                                        vie&#539;ii sale din cercetarea camerelor care &icirc;l &icirc;nconjoar&#259;.
+                                        Asta, pentru c&#259; &icirc;ntreaga lume este o imens&#259; construc&#539;ie, cu
+                                        camere, vestibule &#537;i cur&#539;i interioare. Construc&#539;ie &icirc;n ale
+                                        c&#259;rei camere inferioare exist&#259; o mare, cu fluxuri &#537;i refluxuri,
+                                        &icirc;n ale c&#259;rei camere superioare se formeaz&#259; nori.
+                                        &bdquo;Casa&rdquo;, pentru c&#259; a&#537;a o nume&#537;te, &icirc;ntre&#539;ine
+                                        o faun&#259;, format&#259; din p&#259;s&#259;ri &#537;i pe&#537;ti,
+                                        &icirc;ns&#259; numai doi oameni locuiesc &icirc;n ea. Pe protagonist &#537;i pe
+                                        cel pe care acesta &icirc;l nume&#537;te simplu &bdquo;Cel&#259;lalt Om&rdquo;.
+                                        Au mai existat oameni, &icirc;nc&#259; treisprezece, mai exact, dar au murit.
+                                        Acum, &icirc;n lumea-cas&#259; tr&#259;iesc doar doi oameni. Iar &icirc;n
+                                        s&#259;lile ei enorme nu exist&#259; nicio pies&#259; de mobilier, &icirc;n
+                                        schimb exist&#259; statui.&rdquo;</em></p>
+                                <p class="text_obisnuit2">Leadership: Crea&#355;ia ta dispune de constituirea unei noi
+                                    identit&#259;&#355;i &icirc;n ceea ce prive&#351;te mecanismul recunoa&#351;terii de
+                                    sine &icirc;n evolu&#355;ia fenomenului de &ldquo;oglindire omogen&#259;&rdquo;,
+                                    prin &icirc;ntrep&#259;trunderea experien&#355;ei de men&#355;inere a
+                                    aparen&#355;elor?</p>
+                                <p class="text_obisnuit">Aceea&#351;i doi oameni din romanul
+                                    &bdquo;Piranesi&rdquo;&nbsp; corespund imaginii mele &icirc;n constela&#355;ia
+                                    gemenilor, &icirc;ntr-un tablou mi&#351;c&#259;tor care dincolo de vizibil, dincolo
+                                    de lic&#259;rul&nbsp;felinarului &#351;i chiar dincolo de
+                                    &icirc;ntuneric,&nbsp;ascunde acea form&#259; t&#259;cut&#259;, timid&#259;, dar
+                                    nem&#259;rginit&#259;, de intuire a realit&#259;&#539;ii prin fenomenul de
+                                    identificare afectiv&#259; care m&#259; ajut&#259; s&#259; m&#259; transpun &icirc;n
+                                    locul altcuiva &#537;i s&#259; simt bucurii &#537;i triste&#539;i al&#259;turi de
+                                    el.</p>
+                                <p class="text_obisnuit">Se vede, deci, c&#259; reu&#351;esc de fiecare dat&#259;
+                                    s&#259; explorez o realitate perfect tangibil&#259; &icirc;n sfera viziunii
+                                    spontane, holistice, armonice, &#351;i s&#259; g&#259;sesc ceea ce corespunde formei
+                                    de exprimare a artei prin transpunere mental&#259;, deci experiment&acirc;nd o
+                                    realiniere&nbsp;cu constitu&#355;ia mea interioar&#259;.&nbsp;&Icirc;n
+                                    sf&acirc;r&#351;it, ca &icirc;ntr-o c&#259;l&#259;torie &icirc;n alt&#259; lume,
+                                    simt c&#259; fac parte dintr-un joc al dublurii ce contrapune, &icirc;n aceea&#537;i
+                                    structur&#259; figurativ&#259;, o imagine a includerii mele &icirc;n universal
+                                    &#351;i o imagine vibrant&#259; a unei lumi ideale.</p>
+                                <p class="text_obisnuit">O dreapt&#259; este paralel&#259; cu un plan dac&#259;
+                                    este&nbsp;paralel&#259; cu o dreapt&#259; con&#355;inut&#259; &icirc;n plan. Iar un
+                                    om care se vede constant printr-un alt om, &icirc;ntr-o c&#259;l&#259;torie prin
+                                    evolu&#539;ia artei,&nbsp; &icirc;ncepe s&#259; reac&#355;ioneze cu dublul s&#259;u
+                                    &icirc;n virtutea unei mentalit&#259;&#355;i de nivel superior, dar supervizat&#259;
+                                    de o &icirc;ntreag&#259; constela&#355;ie &icirc;n care lucesc &icirc;n nemurire
+                                    numai stelele arti&#351;tilor reprezentativi. Spun asta deoarece materia are
+                                    dispozi&#355;ia de a &bdquo;atrage&rdquo; forma &icirc;ntr-un mod spontan, iar
+                                    mijlocirea mea prin parametrii unei fizici superioare celei p&#259;m&acirc;ntene
+                                    &icirc;&#351;i are ecoul, &icirc;ntr-un mod transparent, dincolo de timpuri...</p>
+                                <p class="text_obisnuit2">Poten&#355;ialul nelimitat al crea&#355;iei mele const&#259;
+                                    &icirc;n a experimenta o realitate perfect tangibil&#259; &icirc;n sfera viziunii
+                                    spontane, acea realitate al c&#259;rei ecou r&#259;zbate p&acirc;n&#259; dincolo de
+                                    infinit prin surprinderea aceluia&#351;i personaj &icirc;n alt&#259; ipostaz&#259;,
+                                    &icirc;n alte tablouri, &icirc;n alte timpuri, dar mereu &icirc;ntr-un plan al
+                                    reflexiei.</p>
+                                <p class="text_obisnuit"><span class="text_obisnuit2">Lucrarea unui artist aflat
+                                        &icirc;n constela&#355;ia gemenilor </span>este de fapt o ilustrare a ideii de a
+                                    deveni la&nbsp;un moment dat suma celor trei variabile de extindere a orizontului de
+                                    afirmare a personalit&#259;&#355;ii &icirc;n domeniul artistic,&nbsp;at&acirc;ta
+                                    vreme va exista o realitate inspirat&#259; dintr-un proces de crea&#355;ie. Cele
+                                    trei variabile sunt: &ldquo;gradul de libertate permis de Alter Ego&rdquo;,
+                                    &ldquo;posibilitatea&nbsp;de a fi peste tot&quot; &#351;i&nbsp; &ldquo;dorin&#355;a
+                                    de a fi mereu altcineva&rdquo;.</p>
+                                <p class="text_obisnuit">&Icirc;n&#355;elege&#355;i c&#259; tehnicile de pictur&#259;
+                                    stimuleaz&#259; exprimarea prin crea&#355;ie a diferitelor problematici cu care
+                                    v&#259; ve&#355;i confrunta &icirc;n diferite momente din via&#355;&#259;. Multe din
+                                    tehnicile acestea trebuie&nbsp; integrate &icirc;n diverse forme de evaluare a
+                                    personalit&#259;&#355;ii dumneavoastr&#259; &icirc;n contextul procesului de
+                                    dubl&#259; tranzi&#539;ie spre starea de conexiune cu momentul&nbsp;prezent.</p>
+                                <p align="justify" class="text_obisnuit style3">&nbsp;</p>
+
+                                <!-- ARTICOL FINAL -->
+
+
+                                <div class="col-sm-12 p-0" id="result"></div>
+
+                                <div class="float-container-stars">
+
+                                    <div class="float-child">
+                                        <div class="sharethis-inline-share-buttons"></div>
+                                    </div>
+
+                                    <div class="float-child">
+                                        <!-- STARS R -->
+                                        <div
+                                            class="rw-ui-container rw-class-<?php echo $rating_class ?> rw-urid-<?php echo $item_id ?>">
+                                        </div>
+                                        <!-- STARS R2 -->
+                                    </div>
+
+                                </div>
+
+                                <!-- AICI PUI LINIE GOALA -->
+
+                                <div class="company-contact-form">
+
+
+
+                                    <div class="bebe-container">
+
+                                        <div class="bebe-child green">
+                                            <img src="index_files/join-comunitate.gif" width="487" height="162"
+                                                alt="Alatura-te Comunitatii Neculai Fantanaru" style="width: 100%;" />
+                                        </div>
+
+                                        <div class="bebe-child blue">
+                                            <a name="form1919401971" id="formAnchor1919401971"></a>
+                                            <script
+                                                src="https://fs2.formsite.com/include/form/embedManager.js?1919401971"></script>
+                                            <script>
+                                                EmbedManager.embed({
+                                                    key: "https://fs2.formsite.com/res/showFormEmbed?EParam=m_OmK8apOTAL-J4kjDS9NNt7h1SghSJ6&1919401971",
+                                                    width: "132%"
+                                                });
+                                            </script>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Widgets -->
+                <div class="col-lg-4 col-md-5">
+                    <div class="text-left">
+                        <!-- Search Box -->
+                        <div class="widget heading-space-half wow fadeIn" data-wow-delay="300ms">
+
+                            <form action="search.html" method="get" id="site-search" class="search-box">
+
+                                <div class="input-group">
+                                    <input type="search" name="q" id="q" class="form-control"
+                                        placeholder="Enter keyword..." required>
+                                    <button type="submit" class="search-addon"><i
+                                            class="fa fa-search line-height-35px"></i> </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Recent Post -->
+                        <div class="widget heading-space-half wow fadeIn post-container" data-wow-delay="350ms">
+                            <h5 class="color-black font-weight-632 text-capitalize mb-4">Cele mai citite</h5>
+                            <div class="single-post mx-1">
+                                <i class="fa fa-calendar mx-1"></i>
+                                <div class="text">
+                                    <a href="https://neculaifantanaruleadership.ro/ochii-mei-vad-lucruri-pe-care-tu-nu-le-vezi.html"
+                                        class="color-grey">Ochii mei vad lucruri pe care tu nu le vezi</a>
+                                </div>
+                            </div>
+
+                            <div class="single-post mx-1">
+                                <i class="fa fa-calendar mx-1"></i>
+                                <div class="text">
+                                    <a href="https://neculaifantanaruleadership.ro/te-admir-cu-ochii-ce-nu-i-vezi.html"
+                                        class="color-grey">Te admir cu ochii, ce nu-i vezi</a>
+                                </div>
+                            </div>
+
+                            <div class="single-post mx-1">
+                                <i class="fa fa-calendar mx-1"></i>
+                                <div class="text">
+                                    <a href="https://neculaifantanaruleadership.ro/autenticitatea-omului-care-se-gandeste-pe-sine.html"
+                                        class="color-grey">Autenticitatea omului care se gandeste pe sine</a>
+                                </div>
+                            </div>
+
+                            <div class="single-post mx-1">
+                                <i class="fa fa-calendar mx-1"></i>
+                                <div class="text">
+                                    <a href="https://neculaifantanaruleadership.ro/ochiul-sfant-al-lui-paracelsus.html"
+                                        class="color-grey">Ochiul sf&acirc;nt al lui Paracelsus</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Categories -->
+                    <div class="widget heading-space-half wow fadeIn categories-container d-none d-md-block"
+                        data-wow-delay="432ms">
+                        <h5 class="color-black font-weight-632 text-capitalize">Categories</h5>
+                        <div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/lideri-si-atitudine.html"
+                                    title="Lideri &#351;i Atitudine">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Lideri &#351;i
+                                        Atitudine <span>32</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-magic.html"
+                                    title="Leadership Magic">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Magic
+                                        <span>32</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-de-succes.html"
+                                    title="Leadership de Succes">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership de Succes
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/hr-resurse-umane.html"
+                                    title="Resurse Umane">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Resurse Umane
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/legile-conducerii.html"
+                                    title="Legile Conducerii">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Legile Conducerii
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-total.html"
+                                    title="Leadership Total">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Total
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-de-durata.html"
+                                    title="Leadership de Durat&#259;">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership de
+                                        Durat&#259; <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/principiile-conducerii.html"
+                                    title="Principiile Conducerii">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Principiile
+                                        Conducerii <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-plus.html"
+                                    title=" Leadership Plus">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Plus
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/calitatile-unui-lider.html"
+                                    title="Calit&#259;&#355;ile unui Lider">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Calit&#259;&#355;ile
+                                        unui Lider <span>22</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-de-varf.html"
+                                    title="Leadership de V&#229;rf">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership de
+                                        V&#229;rf <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-impact.html"
+                                    title="Leadership Impact">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Impact
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/dezvoltare-personala.html"
+                                    title="Dezvoltare Personal&#259;">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Dezvoltare
+                                        Personal&#259; <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/aptitudini-si-abilitati-de-leadership.html"
+                                    title="Aptitudini &#351;i Abilit&#259;&#355;i">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Aptitudini &#351;i
+                                        Abilit&#259;&#355;i <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-real.html"
+                                    title="Leadership Real">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Real
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-de-baza.html"
+                                    title="Leadership de Baz&#259;">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership de
+                                        Baz&#259; <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-360.html"
+                                    title="Leadership 360&#732;">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership 360&#732;
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-pro.html"
+                                    title="Leadership Pro">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Pro
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-expert.html"
+                                    title="Leadership Expert">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Expert
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-know-how.html"
+                                    title="Leadership Know-How">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Know-How
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/jurnal-de-leadership.html"
+                                    title="Jurnal de Leadership">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Jurnal de Leadership
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/alpha-leadership.html"
+                                    title="Alpha Leadership">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Alpha Leadership
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-on-off.html"
+                                    title="Leadership On/Off">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership On/Off
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-deluxe.html"
+                                    title="Leadership Deluxe">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Deluxe
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-xxl.html"
+                                    title="Leadership XXL-Pack">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership XXL-Pack
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-50-extra.html"
+                                    title="Leadership +50% Extra">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership +50% Extra
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-fusion.html"
+                                    title="Leadership Fusion">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Fusion
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-v8.html"
+                                    title="Leadership V8">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership V8
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-x3-silver.html"
+                                    title="Leadership X3-Silver">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership X3-Silver
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-q2-sensitive.html"
+                                    title="Leadership Q2-Sensitive">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        Q2-Sensitive <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-t7-hybrid.html"
+                                    title="Leadership T7-Hybrid">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership T7-Hybrid
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-n6-celsius.html"
+                                    title="Leadership N6-Celsius">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership N6-Celsius
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-s4-quartz.html"
+                                    title="Leadership S4-Quartz">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership S4-Quartz
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-gt-accent.html"
+                                    title="Leadership GT-Accent">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership GT-Accent
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-fx-intensive.html"
+                                    title="Leadership Y4-Titanium">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        Y4-Titanium <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-iq-light.html"
+                                    title="Leadership IQ-Light">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership IQ-Light
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-7th-edition.html"
+                                    title="Leadership 7th Edition">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership 7th
+                                        Edition <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-xs-analytics.html"
+                                    title="Leadership XS-Analytics">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        XS-Analytics <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-z3-extended.html"
+                                    title="Leadership Z3-Extended">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        Z3-Extended <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-ex-elite.html"
+                                    title="Leadership eX-Elite">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership eX-Elite
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-w3-integra.html"
+                                    title="Leadership W3-Integra">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership W3-Integra
+                                        <span>32</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-sx-experience.html"
+                                    title="Leadership sX-Experience">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        sX-Experience <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-y5-superzoom.html"
+                                    title="Leadership Y5-SuperZoom">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        Y5-SuperZoom <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/performance-ex-flash.html"
+                                    title="Performance eX-Flash">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Performance eX-Flash
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-mindware.html"
+                                    title="Leadership Mindware">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Mindware
+                                        <span>29</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-r2-premiere.html"
+                                    title="Leadership R2-Premiere">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        R2-Premiere <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-y4-titanium.html"
+                                    title="Leadership Y4-Titanium">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership
+                                        Y4-Titanium <span>29</span> </p>
+                                </a>
+                            </div>
+                            <div class="categories-name">
+                                <a href="https://neculaifantanaruleadership.ro/leadership-quantum-xx.html"
+                                    title="Leadership Quantum-XX">
+                                    <p class="font-16 color-grey text-capitalize"><i
+                                            class="fa fa-angle-right font-14 color-blue mr-1"></i> Leadership Quantum-XX
+                                        <span>32</span>
+                                    </p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- BOOKS START -->
+                    <div class="widget heading-space-half wow fadeIn books-container d-none d-md-block"
+                        data-wow-delay="432ms">
+                        <div class="books">
+                            <div class="book">
+                                <h6 class="book-title">Cele 63 de calit&#259;&#355;i ale liderului</h6>
+                                <div class="book-description-image">
+                                    <a
+                                        href="https://neculaifantanaru.com/produs-cele-63-de-calitati-ale-liderului.html"><img
+                                            src="index_files/cele-63-de-calitati-ale-liderului.gif" class="book-img"
+                                            alt="Cele 63 de calit&#259;&#355;i ale liderului" /></a>
+                                    <p class="book-description">De ce s&#259; cite&#351;ti aceast&#259; carte? Pentru
+                                        c&#259; este hot&#259;r&#226;toare pentru optimizarea performan&#355;elor tale.
+                                        Fiindc&#259; pune accent mai mult pe latura uman&#259; dec&#226;t pe conceptul
+                                        de business, ceea ce permite cu u&#351;urin&#355;&#259; citirea &#351;i
+                                        &icirc;n&#355;elegerea ei.</p>
+                                </div>
+                                <div class="text-right book-read-more">
+                                    <a
+                                        href="https://neculaifantanaru.com/produs-cele-63-de-calitati-ale-liderului.html">More
+                                        <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <h6 class="book-title">Leadership - Magia m&#259;iestriei</h6>
+                                <div class="book-description-image">
+                                    <a href="https://neculaifantanaru.com/produs-leadership-magia-maiestriei.html"><img
+                                            src="index_files/coperta_mica_magia_maiestriei_reclama.gif" class="book-img"
+                                            alt="Leadership - Magia m&#259;iestriei" /></a>
+                                    <p class="book-description">Tr&#259;s&#259;tura esen&#355;ial&#259; a acestei
+                                        c&#259;r&#355;i, fa&#355;&#259; de altele existente pe pia&#355;&#259; din
+                                        acela&#351;i domeniu, este aceea c&#259; descrie, prin exemple,
+                                        competen&#355;ele ideale ale unui lider. N-am sus&#355;inut niciodat&#259;
+                                        c&#259; e&#351;te u&#351;or s&#259; devii un lider foarte bun, dar dac&#259;
+                                        ve&#355;i urma pas cu pas...</p>
+                                </div>
+                                <div class="text-right book-read-more">
+                                    <a href="https://neculaifantanaru.com/produs-leadership-magia-maiestriei.html">More
+                                        <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <h6 class="book-title">Atingerea maestrului</h6>
+                                <div class="book-description-image">
+                                    <a href="https://neculaifantanaru.com/produs-atingerea-maestrului.html"><img
+                                            src="index_files/coperta_mica_atingerea_maestrului.gif" class="book-img"
+                                            alt="Atingerea maestrului" /></a>
+                                    <p class="book-description">Pentru unii lideri &bdquo;a conduce&rdquo;
+                                        &icirc;nseamn&#259; mai mult a juca un joc de &#351;ah, un joc de
+                                        inteligen&#355;&#259; &#351;i perspicacitate; pentru al&#355;ii un joc de noroc,
+                                        un joc pe care cred c&#259;-l pot c&#226;&#351;tiga merg&#226;nd de fiecare
+                                        dat&#259; la risc &#351;i pariind totul pe o singur&#259; carte.
+                                    </p>
+                                </div>
+                                <div class="text-right book-read-more">
+                                    <a href="https://neculaifantanaru.com/produs-atingerea-maestrului.html">More <i
+                                            class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <h6 class="book-title">Leadership Puzzle</h6>
+                                <div class="book-description-image">
+                                    <a href="https://neculaifantanaru.com/produs-leadership-puzzle.html"><img
+                                            src="index_files/coperta_mica_leadership_puzzle.gif" class="book-img"
+                                            alt="Leadership Puzzle" /></a>
+                                    <p class="book-description">Am scris aceast&#259; carte, care combin&#259;
+                                        &icirc;ntr-un mod simplu dezvoltarea personal&#259; cu leadershipul, ca pe un
+                                        joc de puzzle, unde trebuie s&#259; combina&#355;i toate piesele date pentru a
+                                        reconstitui imaginea de ansamblu.
+                                    </p>
+                                </div>
+                                <div class="text-right book-read-more">
+                                    <a href="https://neculaifantanaru.com/produs-leadership-puzzle.html">More <i
+                                            class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <h6 class="book-title">Performan&#355;a &icirc;n conducere</h6>
+                                <div class="book-description-image">
+                                    <a href="https://neculaifantanaru.com/produs-performanta-in-conducere.html"><img
+                                            src="index_files/coperta_mica_performanta_in_conducere_reclama.gif"
+                                            class="book-img" alt="Leadership - Pe &icirc;n&#355;elesul tuturor" /></a>
+                                    <p class="book-description">Scopul acestei c&#259;r&#355;i este de a v&#259; oferi
+                                        c&#226;t mai multe informa&#355;ii pre&#355;ioase prin exemple concrete, &#351;i
+                                        de a v&#259; ar&#259;ta o cale prin care s&#259; dob&#226;ndi&#355;i capacitatea
+                                        de a-i determina pe ceilal&#355;i s&#259; vad&#259; lucrurile din aceea&#351;i
+                                        perspectiv&#259; ca dumneavoastr&#259;.
+                                    </p>
+                                </div>
+                                <div class="text-right book-read-more">
+                                    <a href="https://neculaifantanaru.com/produs-performanta-in-conducere.html">More <i
+                                            class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <h6 class="book-title">Leadership - Pe &icirc;n&#355;elesul tuturor</h6>
+                                <div class="book-description-image">
+                                    <a href="https://neculaifantanaru.com/produs-leadership-pe-intelesul-tuturor.html"><img
+                                            src="index_files/coperta_leadership_pe_intelesul_tuturor_reclama.gif"
+                                            class="book-img" alt="Leadership - Pe &icirc;n&#355;elesul tuturor" /></a>
+                                    <p class="book-description">Urm&#259;resc &icirc;n r&#226;ndurile acestei
+                                        c&#259;r&#355;i s&#259; trezesc interesul omului obi&#351;nuit pentru
+                                        ac&#355;iune &#351;i succes. Mesajul acestui volum este c&#259; o na&#355;iune
+                                        puternic&#259; este format din oameni puternici &#351;i de succes. Iar fiecare
+                                        din noi are poten&#355;ial, deci succes&hellip;
+                                    </p>
+                                </div>
+                                <div class="text-right book-read-more">
+                                    <a href="https://neculaifantanaru.com/produs-leadership-pe-intelesul-tuturor.html">More
+                                        <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- BOOKS FINAL -->
+
+                        <!------- FACEBOOK FAN PAGE ------>
+
+                        <iframe
+                            src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FNeculai-I-Fantanaru%2F149050045149128&amp;width=238&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=true&amp;appId=215619111804710"
+                            scrolling="no" frameborder="0"
+                            style="border:none; overflow:hidden; width:238px; height:150px;margin-top: 50px;"
+                            allowtransparency="true"></iframe>
+
+                        <!-------/ FACEBOOK FAN PAGE ------>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Blog ends -->
+    <!-- Footer starts -->
+    <footer class="p-half bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <ul class="footer-icons mb-4">
+                        <li><a href="javascript:void(0)" class="wow fadeInUp facebook"><i class="fab fa-facebook-f"></i>
+                            </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInDown twitter"><i class="fab fa-twitter"></i>
+                            </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInUp google"><i class="fab fa-google"></i> </a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInDown linkedin"><i
+                                    class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInUp instagram"><i class="fab fa-instagram"></i>
+                            </a> </li>
+                        <li><a href="javascript:void(0)" class="wow fadeInDown pinterest"><i
+                                    class="fab fa-pinterest-p"></i> </a> </li>
+                    </ul>
+                    <p class="copyrights mt-2 mb-2">&copy; 2022 Neculai Fantanaru</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+
+    <footer class="main-footer">
+        <div class="footer-top bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="content">
+                            <h5>
+                                OUR LOCATIONS
+                            </h5>
+                            <p>
+                                Eşti interesat de leadership şi doreşti să iei legătura cu mine?
+                            </p>
+
+                        </div>
+                        <a href="https://neculaifantanaruleadership.ro/contact.html"><button
+                                class="btn-block">Contactează-mă</button></a></a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <h5>
+                                LĂSĂŢI NR. DE TELEFON
+                            </h5>
+                            <p>
+                                Lasă-mi numărul tău de telefon şi te voi contacta eu cât se poate de repede.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" placeholder="RO: +4 (0) 750 193 697" />
+                                <button>Trimite</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <h5>
+                                TRIMITE ADRESA DE E-MAIL
+                            </h5>
+                            <p>
+                                Lasă-mi adresa ta de E-mail şi te voi contacta eu cât se poate de repede.
+                            </p>
+                            <div class="input-group">
+                                <input type="text" placeholder="Enter email address" />
+                                <button>Trimite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container d-flex footer-content">
+                <div class="logo-container">
+                    <img src="./creative-studio/img/logo2.png" alt="company logo" />
+
+                </div>
+                <div class="footer-menu-container">
+                    <div class="menu1">
+                        <h6>Contact</h6>
+                        <ul>
+                            <li><a href="https://neculaifantanaruleadership.ro/despre.html">Despre</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/feedback.html">Feedback</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/contact.html">Contact</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/directory.html">Site Map</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/newsletter.html">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu2">
+                        <h6>Termeni</h6>
+                        <ul>
+                            <li><a href="https://neculaifantanaruleadership.ro/en/privacy-policy.html">Privacy</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/termeni-si-conditii.html">Termeni si
+                                    conditii</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/parteneri.html">Parteneri</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu3">
+                        <h6>Proiecte</h6>
+                        <ul>
+                            <li><a href="https://neculaifantanaruleadership.ro/scenarii-de-film.html">Scenarii de
+                                    film</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/carti-leadership.html">Cărţi</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/evenimente.html">Evenimente</a></li>
+                            <li><a href="https://neculaifantanaruleadership.ro/training-si-consultanta.html">Training şi
+                                    consultanţă</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu4">
+                        <h6>Ai nevoie de ajutor?</h6>
+                        <p>Please contact our customer service.</p>
+                        <div class="links">
+                            <a href="#">Trimite E-mail</a>
+                            <a href="#">Call Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright-text">
+                    © 2022 Copyright
+                </div>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">LIMBA ROMANA</a></li>
+                </ul>
+                <div>
+                    Created & powered by: Neculai Fantanaru
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="./vendor/js/bundle.min.js"></script>
+
+    <!-- Plugin Js -->
+    <script src="./vendor/js/jquery.fancybox.min.js"></script>
+    <script src="./vendor/js/owl.carousel.min.js"></script>
+    <script src="./vendor/js/swiper.min.js"></script>
+    <script src="./vendor/js/jquery.cubeportfolio.min.js"></script>
+    <script src="./vendor/js/jquery.appear.js"></script>
+    <script src="./vendor/js/parallaxie.min.js"></script>
+    <script src="./vendor/js/wow.min.js"></script>
+    <script src="./vendor/js/select2.min.js"></script>
+    <!-- Morphtext File -->
+    <script src="./creative-studio/js/morphext.min.js"></script>
+    <!-- Slick JS File -->
+    <script src="./vendor/js/slick.min.js"></script>
+
+    <!-- REVOLUTION JS FILES -->
+    <script src="./vendor/js/jquery.themepunch.tools.min.js"></script>
+    <script src="./vendor/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION EXTENSIONS -->
+    <script src="./vendor/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="./vendor/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- custom script -->
+    <script src="./creative-studio/js/menu.js"></script>
+    <script src="./creative-studio/js/country-dropdown.js"></script>
+
+    <script src="./creative-studio/js/script.js"></script>
+    <script>
+        $.sidebarMenu($('.sidebar-menu'))
+    </script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1417683-22"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-1417683-22');
+    </script>
+
+
+
+    <!-- SHARE THIS -->
+    <script type="text/javascript"
+        src="//platform-api.sharethis.com/js/sharethis.js#property=5a62f9a7431ad7001336e9f1&product=inline-share-buttons"></script>
+    <!-- // SHARE THIS -->
+
+    <!-- RATING STAR -->
+
+    <script type="text/javascript">(function (d, t, e, m) {
+
+            // Async Rating-Widget initialization.
+            window.RW_Async_Init = function () {
+
+                RW.init({
+                    huid: "260506",
+                    uid: "235d3ade555f5f6d5e9dad4b7f74f2bc",
+                    source: "website",
+                    options: {
+                        "advanced": {
+                            "layout": {
+                                "align": {
+                                    "hor": "center",
+                                    "ver": "top"
+                                }
+                            }
+                        },
+                        "size": "medium",
+                        "style": "oxygen",
+                        "isDummy": false
+                    }
+                });
+                RW.render();
+            };
+            // Append Rating-Widget JavaScript library.
+            var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+                l = d.location, ck = "Y" + t.getFullYear() +
+                    "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+                f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+                a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+            if (d.getElementById(id)) return;
+            rw = d.createElement(e);
+            rw.id = id; rw.async = true; rw.type = "text/javascript";
+            rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+            s.parentNode.insertBefore(rw, s);
+        }(document, new Date(), "script", "rating-widget.com/"));</script>
+
+    <!-- RATING STAR -->
+
+    <!------------READ MORE START-------->
+
+    <script type="text/javascript">
+        function addLink() {
+            //Get the selected text and append the extra info
+            var selection = window.getSelection(),
+                pagelink = '<br /><br /> Read more at: ' + document.location.href,
+                copytext = selection + pagelink,
+                newdiv = document.createElement('div');
+
+            //hide the newly created container
+            newdiv.style.position = 'absolute';
+            newdiv.style.left = '-99999px';
+
+            //insert the container, fill it with the extended text, and define the new selection
+            document.body.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+
+            window.setTimeout(function () {
+                document.body.removeChild(newdiv);
+            }, 100);
+        }
+
+        document.addEventListener('copy', addLink);
+    </script>
+
+    <!------------READ MORE END-------->
+
+</body>
+
+</html>
