@@ -16,9 +16,16 @@
     
     
 }
+.card_body img{
+    width: 170px;
+}
 .btn_text{
     border: 1px solid white;
-    padding: 5px 15px;
+  
+    font-size: 14px;
+    width: 100px;
+    /* height: 19px; */
+    padding: 5px 0;
 }
 .curve_div1{
     position: relative;
@@ -101,21 +108,43 @@
 
 }
 @media(max-width:1000px){
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        /* flex: 0 0 33.333333%; */
+        max-width: 33.333333%;
+        max-width: 50% !important;
+    }.card_body p {
+       
+        height: 126px;
+    }
     .row1{
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    .display{
+        display: none;
+    }
+    .visibile{
+        display: inline-block;
+    }
+    .visibile{
+        display: block !important;
     }
     .row2{
-        flex-direction: column;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
-        }
+    }
         .col-card{
-            max-width: 100%;
+          
         }
         .card_header{
             min-height: 150px;
 
+        }
+        .main-footer .footer-top .input-group button {
+            margin-left: 15px;
+            display: none;
         }
 }
