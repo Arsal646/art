@@ -1,6 +1,5 @@
 .row1,.row2{
-    background: rgb(239,229,248);
-    background: linear-gradient(103deg, rgba(239,229,248,1) 30%, rgba(229,191,244,1) 100%);  
+  background: #F3F5F9;
  
 } 
 .card_detail{
