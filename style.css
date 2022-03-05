@@ -1,3 +1,6 @@
+.row1,.row2{
+    background: rgb(239,229,248);
+    background: linear-gradient(103deg, rgba(239,229,248,1) 30%, rgba(229,191,244,1) 100%);   }
 .card_detail{
     margin: 10px 0;
 }
@@ -140,7 +143,7 @@
           
         }
         .card_header{
-            min-height: 150px;
+           
 
         }
         .main-footer .footer-top .input-group button {
