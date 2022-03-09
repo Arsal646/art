@@ -1,0 +1,14 @@
+.custom-menu ul li{
+    padding: 0px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.custom-menu ul .active{
+    background-color: #F41226;
+    color: white;
+}
+.custom-menu ul .active a{
+    
+    color: white !important;
+}
